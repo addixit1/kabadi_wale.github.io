@@ -1,0 +1,169 @@
+/* /Pages/Business.razor.rz.scp.css */
+@media only screen and (min-width: 992px) {
+    .section-6[b-8gocb8pbav] {
+        border-radius: 1.5rem;
+    }
+    .section-4[b-8gocb8pbav] {
+        border-radius: 1.5rem;
+    }
+}
+
+/* /Pages/Individual/IndividualContent.razor.rz.scp.css */
+.zero-waste-card[b-c9s2b9qmjt] {
+    background-color: #60692F;
+}
+
+.old-vehicle-card[b-c9s2b9qmjt] {
+    background-color: #2F5888;
+}
+
+@media only screen and (max-width: 992px) {
+    .zero-waste-society[b-c9s2b9qmjt] {
+        background-color: #778344;
+    }
+    .vehicle-scrapping[b-c9s2b9qmjt] {
+        background-color: #5B98DD;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .zero-waste-society[b-c9s2b9qmjt] {
+        background-image: url("/images/individual/zero-waste-society.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .vehicle-scrapping[b-c9s2b9qmjt] {
+        background-image: url("/images/individual/vehicle-scrapping.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero-image[b-c9s2b9qmjt] {
+        background-image: url("../images/individual-individual-mobile-screen-hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: calc(100vh - 6rem);
+    }
+}
+/* /Pages/Journey.razor.rz.scp.css */
+@media only screen and (min-width: 992px) {
+    .year[b-7q1slp45ie] {
+        -webkit-text-stroke: 2px var(--fg-default-1);
+        -webkit-text-fill-color: transparent;
+        font-size: 7rem;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .circle[b-7q1slp45ie] {
+        background-color: var(--background);
+        width: 32px;
+        height: 32px;
+    }
+    .scroll[b-7q1slp45ie] {
+        top: 18%;
+        background-color: var(--background);
+    }
+}
+@media only screen and (max-width: 992px) {
+    .year[b-7q1slp45ie] {
+        -webkit-text-stroke: 1px var(--fg-default-1);
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .circle[b-7q1slp45ie] {
+        background-color: var(--background);
+        width: 18px;
+        height: 18px;
+        border-width: 1px !important;
+    }
+    .scroll[b-7q1slp45ie] {
+        top: 0;
+        background-color: var(--background);
+    }
+}
+/* /Shared/DarkNavbarLayout.razor.rz.scp.css */
+/* /Shared/LayoutWrapper.razor.rz.scp.css */
+.splash[b-o9t24s5a92]{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 2000;
+}
+
+.splash>div[b-o9t24s5a92]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+}
+
+.splash-loader[b-o9t24s5a92] {
+    justify-content: flex-start;
+    display: flex;
+    height: 0.3rem;
+    width: 15rem;
+    background: var(--container-bg-1);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.splash-loader-bar[b-o9t24s5a92] {
+    background: var(--container-bg-success-1);
+    height: 0.3rem;
+    border-radius: 50%;
+    width: 5rem;
+    animation: move-start-end-start-b-o9t24s5a92 1.5s normal infinite;
+}
+
+@keyframes move-start-end-start-b-o9t24s5a92 {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(250%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+/* /Shared/NavBarComponent.razor.rz.scp.css */
+.brand-logo[b-11aoknir5q]::before {
+    content: '';
+    display: block;
+    width: 14.8rem;
+    height: 2.8rem;
+    background-size: contain;
+}
+
+.link[b-11aoknir5q] {
+    min-height: 3rem;
+}
+
+.light-theme .brand-logo[b-11aoknir5q]::before {
+    background-image: url("../fonts/images-tkw-logo-white.svg");
+}
+
+.dark-theme .brand-logo[b-11aoknir5q]::before {
+    background-image: url("../fonts/images-tkw-logo-dark.svg");
+}
+
+@media (prefers-color-scheme: light) {
+    .brand-logo[b-11aoknir5q]::before {
+        background-image: url("../fonts/images-tkw-logo-white.svg");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .brand-logo[b-11aoknir5q]::before {
+        background-image: url("../fonts/images-tkw-logo-dark.svg");
+    }
+}

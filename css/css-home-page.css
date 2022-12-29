@@ -1,0 +1,95 @@
+﻿/*html, body {
+    scroll-snap-type: y mandatory;
+}
+footer{
+    scroll-snap-align: start;
+}
+*/
+.backdrop {
+    background-color: rgba(0,0,0,.60);
+}
+
+section {
+    /* height: 100vh;
+    scroll-snap-align: start;*/
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.responsive-video {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.circular-economy-logo::before {
+    content: '';
+    display: grid;
+    width: 100%;
+    height: 28rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.light-theme .circular-economy-logo::before {
+    background-image: url("../images/landing-circular-economy-light.png");
+}
+
+.dark-theme .circular-economy-logo::before {
+    background-image: url("../images/landing-circular-economy-dark.png");
+}
+
+@media (prefers-color-scheme: light) {
+    .circular-economy-logo::before {
+        background-image: url("../images/landing-circular-economy-light.png");
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .circular-economy-logo::before {
+        background-image: url("../images/landing-circular-economy-dark.png");
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    section {
+        /*height: auto;*/
+        /*scroll-snap-align: none;*/
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    html, body {
+        scroll-snap-type: none;
+    }
+
+    .circular-economy-logo::before {
+        height: 19rem;
+    }
+}
+
+
+
+/*
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 136px 136px 136px;
+}
+*/
+
+/*
+.overflow::-webkit-scrollbar {
+    display: none;
+}
+.overflow{
+    overflow-y:scroll;
+}*/
